@@ -152,5 +152,4 @@ def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysq
         # print('The query result of single database methode for average in time range: ')
         # print(ta_match_neo4j)
         # print(' Response time: ', match_end - match_start)
-        experiment_result.to_csv('./example/experiment_result.csv')
     return experiment_result
