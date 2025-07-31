@@ -1,7 +1,7 @@
 # Semi-automatic annotation framwork
 This project presents a semi-automatic annotation framework designed to enhance semantic interoperability within the energy domain by transforming structured data into RDF-based knowledge graphs. The proposed framework bridges raw structured data and semantic technologies by leveraging ontologies, semantic similarity calculations, and multi-database architecture (e.g., Neo4j, MySQL). It is particularly tailored to the energy domain, where data is largely structured and voluminous, unlike general domains dominated by unstructured text.
 
-![Semi-Automatic Semantic Interoperability Enhancement Framework](./image/Semi-Automatic Semantic Interoperability Enhancement Framework.svg)
+![Semi-Automatic Semantic Interoperability Enhancement Framework](./image/Semi-Automatic Semantic Interoperability Enhancement Framework.png)
 
 
 ## Methodology of the Semantic Interoperability Framework
