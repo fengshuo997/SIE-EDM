@@ -1,0 +1,501 @@
+DATE,TIMESTAMP,LOCATION,ENERGY_SOURCE,MEASURE,UNIT_OF_MEASURE,INTERVAL,VALUE
+30.08.2021,30.08.2021 23:40,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2509
+13.09.2021,13.09.2021 18:10,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2652
+15.09.2021,15.09.2021 06:10,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+22.08.2021,22.08.2021 10:31,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2349
+12.08.2021,12.08.2021 03:29,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2121
+11.09.2021,11.09.2021 13:10,Atlantis waterpark,HVAC KN8,Supply vent,N,S,
+11.09.2021,11.09.2021 07:10,Atlantis waterpark,HVAC KN8,Supply temp,C,S,1424
+29.08.2021,29.08.2021 02:08,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+16.08.2021,16.08.2021 14:36,Atlantis waterpark,HVAC KN6,Supply temp,C,S,3203
+10.09.2021,10.09.2021 02:10,Atlantis waterpark,HVAC KN9,Extract vent,N,S,
+26.08.2021,26.08.2021 10:50,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1773
+25.08.2021,25.08.2021 00:55,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2072
+30.08.2021,30.08.2021 11:35,Atlantis waterpark,HVAC KN2,Supply temp,C,S,169
+15.09.2021,15.09.2021 23:10,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,60
+25.08.2021,25.08.2021 11:16,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2135
+9.09.2021 ,9.09.2021 21:10,Atlantis waterpark,HVAC KN9,Extract temp,C,S,2912
+10.08.2021,10.08.2021 06:49,Atlantis waterpark,HVAC KN3,Supply temp,C,S,1875
+13.08.2021,13.08.2021 22:22,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2652
+16.08.2021,16.08.2021 17:05,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3283
+9.09.2021 ,9.09.2021 22:10,Atlantis waterpark,HVAC KN2,freq converter,%,S,80
+12.08.2021,12.08.2021 14:37,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2983
+13.08.2021,13.08.2021 16:40,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3351
+30.08.2021,30.08.2021 18:41,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2643
+16.08.2021,16.08.2021 17:00,Atlantis waterpark,HVAC KN6,Supply temp,C,S,3226
+14.08.2021,14.08.2021 10:03,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2743
+17.09.2021,17.09.2021 08:41,Atlantis waterpark,HVAC KN4,load supply ventilator,%,S,80
+18.08.2021,18.08.2021 08:49,Atlantis waterpark,HVAC KN3,Supply temp,C,S,1804
+27.08.2021,27.08.2021 06:39,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2506
+14.08.2021,14.08.2021 02:46,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2361
+16.08.2021,16.08.2021 20:10,Atlantis waterpark,HVAC KN2,Supply temp,C,S,3011
+14.08.2021,14.08.2021 06:32,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2215
+21.08.2021,21.08.2021 04:35,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1775
+25.08.2021,25.08.2021 05:12,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1907
+10.09.2021,10.09.2021 01:40,Atlantis waterpark,HVAC KN4,load supply ventilator,%,S,80
+19.08.2021,19.08.2021 21:38,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2709
+31.08.2021,31.08.2021 12:54,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2566
+25.08.2021,25.08.2021 12:37,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2241
+18.09.2021,18.09.2021 19:11,Atlantis waterpark,HVAC KN9,Supply temp,C,S,2025
+9.08.2021 ,9.08.2021 17:12,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2854
+9.09.2021 ,9.09.2021 17:10,Atlantis waterpark,HVAC KN9,Supply vent,N,S,
+16.08.2021,16.08.2021 16:45,Atlantis waterpark,HVAC KN2,Supply temp,C,S,3325
+10.09.2021,10.09.2021 07:40,Atlantis waterpark,HVAC KN8,Extract vent,N,S,
+18.08.2021,18.08.2021 13:44,Atlantis waterpark,HVAC KN2,Extract temp,C,S,296
+16.09.2021,16.09.2021 02:11,Atlantis waterpark,HVAC KN2,Extract temp,C,S,26
+13.08.2021,13.08.2021 15:05,Atlantis waterpark,HVAC KN4,Supply temp,C,S,3151
+20.09.2021,20.09.2021 02:41,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+12.08.2021,12.08.2021 21:37,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2666
+29.08.2021,29.08.2021 23:46,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2492
+4.09.2021 ,4.09.2021 16:03,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2717
+13.08.2021,13.08.2021 10:25,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2578
+8.09.2021 ,8.09.2021 17:10,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2586
+6.09.2021 ,6.09.2021 14:47,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2689
+14.08.2021,14.08.2021 19:08,Atlantis waterpark,HVAC KN5,Supply temp,C,S,3211
+29.08.2021,29.08.2021 00:27,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2566
+21.09.2021,21.09.2021 01:11,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2649
+19.08.2021,19.08.2021 06:55,Atlantis waterpark,HVAC KN5,Extract temp,C,S,262
+18.08.2021,18.08.2021 14:05,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2469
+11.09.2021,11.09.2021 08:10,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2481
+9.09.2021 ,9.09.2021 10:40,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2592
+14.08.2021,14.08.2021 22:34,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2792
+28.08.2021,28.08.2021 08:41,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1676
+25.08.2021,25.08.2021 09:46,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2041
+24.08.2021,24.08.2021 03:18,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2275
+5.09.2021 ,5.09.2021 04:59,Atlantis waterpark,HVAC KN2,Supply temp,C,S,139
+9.09.2021 ,9.09.2021 18:10,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+13.09.2021,13.09.2021 17:10,Atlantis waterpark,HVAC KN9,Extract temp,C,S,3027
+27.08.2021,27.08.2021 06:41,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1701
+11.08.2021,11.08.2021 10:38,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2538
+16.09.2021,16.09.2021 00:41,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+10.08.2021,10.08.2021 02:52,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2161
+24.08.2021,24.08.2021 19:07,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2823
+3.09.2021 ,3.09.2021 13:02,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2318
+14.09.2021,14.09.2021 17:40,Atlantis waterpark,HVAC KN9,Supply vent,N,S,
+6.09.2021 ,6.09.2021 06:57,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2592
+5.09.2021 ,5.09.2021 00:45,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2435
+24.08.2021,24.08.2021 13:30,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2321
+20.09.2021,20.09.2021 07:11,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+16.08.2021,16.08.2021 15:38,Atlantis waterpark,HVAC KN3,Supply temp,C,S,332
+31.08.2021,31.08.2021 12:27,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1984
+7.09.2021 ,7.09.2021 05:24,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1304
+17.08.2021,17.08.2021 21:34,Atlantis waterpark,HVAC KN3,Supply temp,C,S,201
+22.08.2021,22.08.2021 17:50,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2866
+17.09.2021,17.09.2021 17:41,Atlantis waterpark,HVAC KN8,Supply temp,C,S,1922
+19.09.2021,19.09.2021 12:03,Atlantis waterpark,HVAC KN2,Extract vent,N,S,1
+31.08.2021,31.08.2021 21:20,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1981
+21.09.2021,21.09.2021 12:41,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2475
+11.08.2021,11.08.2021 09:37,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2398
+21.08.2021,21.08.2021 04:40,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1824
+1.09.2021 ,1.09.2021 01:18,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1861
+23.08.2021,23.08.2021 16:37,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2338
+20.08.2021,20.08.2021 16:06,Atlantis waterpark,HVAC KN6,Supply temp,C,S,28
+26.08.2021,26.08.2021 22:48,Atlantis waterpark,HVAC KN6,Supply temp,C,S,179
+18.08.2021,18.08.2021 09:58,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2047
+7.09.2021 ,7.09.2021 01:33,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2532
+18.08.2021,18.08.2021 20:00,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2349
+22.08.2021,22.08.2021 12:58,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2794
+9.08.2021 ,9.08.2021 12:00,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2463
+20.09.2021,20.09.2021 23:41,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2764
+12.09.2021,12.09.2021 04:10,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+22.08.2021,22.08.2021 13:20,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2854
+23.08.2021,23.08.2021 15:08,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1881
+20.09.2021,20.09.2021 06:11,Atlantis waterpark,HVAC KN9,Extract temp,C,S,2905
+6.09.2021 ,6.09.2021 10:48,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2058
+5.09.2021 ,5.09.2021 11:37,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2284
+16.09.2021,16.09.2021 20:11,Atlantis waterpark,HVAC KN4,load supply ventilator,%,S,80
+28.08.2021,28.08.2021 13:57,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1815
+17.08.2021,17.08.2021 15:01,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2529
+27.08.2021,27.08.2021 00:29,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1721
+10.09.2021,10.09.2021 11:10,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2832
+4.09.2021 ,4.09.2021 10:40,Atlantis waterpark,HVAC KN2,Supply temp,C,S,193
+18.09.2021,18.09.2021 17:11,Atlantis waterpark,HVAC KN3,Extract temp,C,S,25
+30.08.2021,30.08.2021 05:33,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2552
+20.08.2021,20.08.2021 16:52,Atlantis waterpark,HVAC KN4,Supply temp,C,S,288
+16.09.2021,16.09.2021 02:11,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+27.08.2021,27.08.2021 14:58,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2672
+14.09.2021,14.09.2021 12:40,Atlantis waterpark,HVAC KN9,Extract temp,C,S,3012
+9.09.2021 ,9.09.2021 16:40,Atlantis waterpark,HVAC KN9,Supply vent,N,S,
+17.08.2021,17.08.2021 15:35,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2566
+13.08.2021,13.08.2021 12:21,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2977
+7.09.2021 ,7.09.2021 01:35,Atlantis waterpark,HVAC KN2,Supply temp,C,S,157
+19.09.2021,19.09.2021 08:41,Atlantis waterpark,HVAC KN8,Supply temp,C,S,1509
+2.09.2021 ,2.09.2021 17:46,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2663
+18.08.2021,18.08.2021 14:15,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2466
+15.09.2021,15.09.2021 00:10,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2615
+24.08.2021,24.08.2021 16:23,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2555
+15.09.2021,15.09.2021 14:40,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2806
+22.09.2021,22.09.2021 02:41,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,60
+11.09.2021,11.09.2021 20:40,Atlantis waterpark,HVAC KN2,Extract temp,C,S,26
+21.09.2021,21.09.2021 15:11,Atlantis waterpark,HVAC KN6,load extract ventilator,%,S,800000
+17.09.2021,17.09.2021 00:41,Atlantis waterpark,HVAC KN8,Extract temp,C,S,283
+19.09.2021,19.09.2021 05:11,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2609
+24.08.2021,24.08.2021 14:46,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2458
+25.08.2021,25.08.2021 02:19,Atlantis waterpark,HVAC KN6,Supply temp,C,S,191
+25.08.2021,25.08.2021 15:13,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2429
+18.08.2021,18.08.2021 10:27,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2052
+15.08.2021,15.08.2021 08:07,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2272
+16.08.2021,16.08.2021 22:41,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2646
+19.08.2021,19.08.2021 13:36,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2606
+18.09.2021,18.09.2021 00:11,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+21.08.2021,21.08.2021 08:41,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1941
+22.08.2021,22.08.2021 05:27,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1892
+15.09.2021,15.09.2021 17:40,Atlantis waterpark,HVAC KN9,Supply vent,N,S,
+18.09.2021,18.09.2021 06:11,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+15.08.2021,15.08.2021 10:52,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2646
+19.09.2021,19.09.2021 04:41,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+4.09.2021 ,4.09.2021 00:46,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2592
+14.08.2021,14.08.2021 02:43,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2495
+22.08.2021,22.08.2021 19:41,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2723
+16.08.2021,16.08.2021 17:44,Atlantis waterpark,HVAC KN6,Supply temp,C,S,32
+14.08.2021,14.08.2021 09:56,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2518
+7.09.2021 ,7.09.2021 05:57,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2426
+2.09.2021 ,2.09.2021 12:26,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2626
+12.08.2021,12.08.2021 13:22,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2894
+27.08.2021,27.08.2021 21:10,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1935
+19.09.2021,19.09.2021 19:11,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+21.08.2021,21.08.2021 01:05,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2069
+17.08.2021,17.08.2021 18:30,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2312
+31.08.2021,31.08.2021 02:06,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1493
+16.08.2021,16.08.2021 16:03,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3271
+26.08.2021,26.08.2021 10:34,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1724
+12.09.2021,12.09.2021 18:40,Atlantis waterpark,HVAC KN9,Supply temp,C,S,2567
+17.08.2021,17.08.2021 00:28,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2204
+5.09.2021 ,5.09.2021 10:52,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2495
+17.08.2021,17.08.2021 02:22,Atlantis waterpark,HVAC KN3,Supply temp,C,S,199
+14.09.2021,14.09.2021 17:10,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+11.09.2021,11.09.2021 07:40,Atlantis waterpark,HVAC KN4,load supply ventilator,%,S,80
+3.09.2021 ,3.09.2021 13:24,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2366
+19.09.2021,19.09.2021 21:41,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2783
+6.09.2021 ,6.09.2021 09:27,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2598
+21.09.2021,21.09.2021 21:41,Atlantis waterpark,HVAC KN13.1,Extract temp,C,S,2483
+11.08.2021,11.08.2021 15:09,Atlantis waterpark,HVAC KN2,Supply temp,C,S,3031
+16.08.2021,16.08.2021 13:24,Atlantis waterpark,HVAC KN4,Supply temp,C,S,3108
+15.09.2021,15.09.2021 05:40,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+14.09.2021,14.09.2021 23:40,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+10.09.2021,10.09.2021 01:40,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,60
+17.08.2021,17.08.2021 18:15,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2284
+18.08.2021,18.08.2021 13:01,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2386
+13.08.2021,13.08.2021 13:51,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2977
+2.09.2021 ,2.09.2021 15:57,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2732
+17.08.2021,17.08.2021 19:08,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2224
+7.09.2021 ,7.09.2021 22:01,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2626
+14.08.2021,14.08.2021 18:47,Atlantis waterpark,HVAC KN4,Supply temp,C,S,3288
+26.08.2021,26.08.2021 11:45,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1935
+14.08.2021,14.08.2021 22:00,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2797
+16.08.2021,16.08.2021 16:28,Atlantis waterpark,HVAC KN6,Supply temp,C,S,3265
+13.09.2021,13.09.2021 03:10,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+15.09.2021,15.09.2021 22:10,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2852
+4.09.2021 ,4.09.2021 02:56,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2603
+13.09.2021,13.09.2021 20:40,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+18.08.2021,18.08.2021 13:27,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2438
+3.09.2021 ,3.09.2021 19:18,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2626
+19.09.2021,19.09.2021 10:11,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+22.09.2021,22.09.2021 00:28,Atlantis waterpark,HVAC KN4,Extract vent,N,S,1
+10.08.2021,10.08.2021 10:41,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2335
+25.08.2021,25.08.2021 11:16,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2112
+12.08.2021,12.08.2021 17:45,Atlantis waterpark,HVAC KN6,Supply temp,C,S,3074
+15.08.2021,15.08.2021 22:09,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2706
+9.09.2021 ,9.09.2021 01:10,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2538
+9.08.2021 ,9.08.2021 13:30,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2643
+19.08.2021,19.08.2021 06:12,Atlantis waterpark,HVAC KN3,Supply temp,C,S,1459
+11.08.2021,11.08.2021 12:51,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2923
+31.08.2021,31.08.2021 14:37,Atlantis waterpark,HVAC KN6,load extract ventilator,%,S,800000
+18.09.2021,18.09.2021 16:11,Atlantis waterpark,HVAC KN8,Supply temp,C,S,2131
+12.09.2021,12.09.2021 07:40,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+20.08.2021,20.08.2021 20:54,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2443
+30.08.2021,30.08.2021 04:31,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2552
+13.09.2021,13.09.2021 15:40,Atlantis waterpark,HVAC KN8,Supply temp,C,S,2629
+17.08.2021,17.08.2021 20:54,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2067
+21.08.2021,21.08.2021 10:10,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2657
+11.09.2021,11.09.2021 13:10,Atlantis waterpark,HVAC KN8,Extract vent,N,S,
+20.09.2021,20.09.2021 07:41,Atlantis waterpark,HVAC KN9,Supply vent,N,S,
+1.09.2021 ,1.09.2021 00:23,Atlantis waterpark,HVAC KN5,Supply temp,C,S,191
+12.09.2021,12.09.2021 10:40,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2475
+30.08.2021,30.08.2021 19:25,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2092
+17.08.2021,17.08.2021 13:50,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2506
+25.08.2021,25.08.2021 16:28,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2623
+12.09.2021,12.09.2021 12:40,Atlantis waterpark,HVAC KN2,freq converter,%,S,80
+19.08.2021,19.08.2021 10:31,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2121
+5.09.2021 ,5.09.2021 18:23,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2729
+14.09.2021,14.09.2021 10:10,Atlantis waterpark,HVAC KN2,freq converter,%,S,80
+13.08.2021,13.08.2021 01:53,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2715
+27.08.2021,27.08.2021 12:00,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2007
+22.08.2021,22.08.2021 20:39,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2686
+10.09.2021,10.09.2021 21:40,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+19.08.2021,19.08.2021 06:28,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2595
+8.09.2021 ,8.09.2021 10:25,Atlantis waterpark,HVAC KN2,Extract temp,C,S,254
+20.09.2021,20.09.2021 06:11,Atlantis waterpark,HVAC KN4,Extract temp,C,S,25
+26.08.2021,26.08.2021 14:29,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2706
+16.08.2021,16.08.2021 12:44,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2886
+17.08.2021,17.08.2021 01:59,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2115
+18.08.2021,18.08.2021 11:59,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2304
+21.08.2021,21.08.2021 11:54,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2472
+18.08.2021,18.08.2021 11:22,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2195
+17.09.2021,17.09.2021 19:41,Atlantis waterpark,HVAC KN9,Extract vent,N,S,
+12.09.2021,12.09.2021 10:40,Atlantis waterpark,HVAC KN9,Supply temp,C,S,2059
+26.08.2021,26.08.2021 15:51,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2386
+14.09.2021,14.09.2021 00:10,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,60
+13.09.2021,13.09.2021 15:40,Atlantis waterpark,HVAC KN8,Supply vent,N,S,
+19.08.2021,19.08.2021 03:52,Atlantis waterpark,HVAC KN3,Supply temp,C,S,149
+14.08.2021,14.08.2021 14:55,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2637
+20.09.2021,20.09.2021 12:11,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+26.08.2021,26.08.2021 07:34,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1516
+9.08.2021 ,9.08.2021 14:13,Atlantis waterpark,HVAC KN2,Supply temp,C,S,266
+14.09.2021,14.09.2021 11:40,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2495
+27.08.2021,27.08.2021 14:58,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2321
+15.09.2021,15.09.2021 05:40,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+10.08.2021,10.08.2021 11:09,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2552
+13.09.2021,13.09.2021 06:40,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2503
+4.09.2021 ,4.09.2021 05:17,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2461
+11.09.2021,11.09.2021 19:40,Atlantis waterpark,HVAC KN9,Supply temp,C,S,2406
+12.09.2021,12.09.2021 01:40,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+12.08.2021,12.08.2021 22:47,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2603
+12.09.2021,12.09.2021 20:10,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+30.08.2021,30.08.2021 05:45,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2486
+11.08.2021,11.08.2021 10:41,Atlantis waterpark,HVAC KN5,Supply temp,C,S,254
+7.09.2021 ,7.09.2021 21:54,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2555
+9.08.2021 ,9.08.2021 18:59,Atlantis waterpark,HVAC KN3,Supply temp,C,S,276
+11.09.2021,11.09.2021 21:10,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2851
+1.09.2021 ,1.09.2021 11:11,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1704
+21.09.2021,21.09.2021 07:41,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,60
+15.08.2021,15.08.2021 17:23,Atlantis waterpark,HVAC KN2,Extract temp,C,S,3251
+9.08.2021 ,9.08.2021 15:26,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2749
+13.08.2021,13.08.2021 03:42,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2224
+30.08.2021,30.08.2021 05:56,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1441
+10.08.2021,10.08.2021 17:28,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3054
+18.08.2021,18.08.2021 17:29,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2646
+30.08.2021,30.08.2021 10:50,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1553
+23.08.2021,23.08.2021 17:12,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1815
+16.09.2021,16.09.2021 09:41,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,100
+13.08.2021,13.08.2021 03:18,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2195
+10.09.2021,10.09.2021 07:10,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+9.09.2021 ,9.09.2021 13:40,Atlantis waterpark,HVAC KN8,load supply ventilator,%,S,100
+28.08.2021,28.08.2021 01:16,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1567
+25.08.2021,25.08.2021 13:53,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2335
+18.08.2021,18.08.2021 00:44,Atlantis waterpark,HVAC KN6,Supply temp,C,S,187
+15.08.2021,15.08.2021 08:00,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2204
+18.08.2021,18.08.2021 14:23,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2589
+16.08.2021,16.08.2021 15:50,Atlantis waterpark,HVAC KN4,Supply temp,C,S,3194
+10.09.2021,10.09.2021 11:40,Atlantis waterpark,HVAC KN8,Extract vent,N,S,
+24.08.2021,24.08.2021 00:04,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2675
+10.08.2021,10.08.2021 13:47,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2917
+17.08.2021,17.08.2021 19:28,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2284
+21.09.2021,21.09.2021 23:41,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2438
+14.08.2021,14.08.2021 12:13,Atlantis waterpark,HVAC KN4,Supply temp,C,S,294
+30.08.2021,30.08.2021 01:08,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2443
+15.09.2021,15.09.2021 12:10,Atlantis waterpark,HVAC KN6,load extract ventilator,%,S,800000
+17.09.2021,17.09.2021 20:11,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+16.08.2021,16.08.2021 06:08,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2269
+21.08.2021,21.08.2021 11:44,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2649
+5.09.2021 ,5.09.2021 15:09,Atlantis waterpark,HVAC KN6,Extract temp,C,S,26
+9.08.2021 ,9.08.2021 15:47,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2843
+10.09.2021,10.09.2021 03:10,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+20.09.2021,20.09.2021 02:11,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2538
+17.09.2021,17.09.2021 01:11,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2729
+13.08.2021,13.08.2021 09:52,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2381
+11.08.2021,11.08.2021 16:41,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2715
+8.09.2021 ,8.09.2021 06:43,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2595
+26.08.2021,26.08.2021 17:18,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2386
+12.09.2021,12.09.2021 11:10,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,100
+23.08.2021,23.08.2021 14:43,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1907
+16.09.2021,16.09.2021 13:11,Atlantis waterpark,HVAC KN6,load extract ventilator,%,S,800000
+12.08.2021,12.08.2021 12:40,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2772
+4.09.2021 ,4.09.2021 08:25,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1441
+20.08.2021,20.08.2021 08:43,Atlantis waterpark,HVAC KN3,Supply temp,C,S,1907
+12.09.2021,12.09.2021 10:10,Atlantis waterpark,HVAC KN8,Supply vent,N,S,
+11.08.2021,11.08.2021 00:21,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2315
+8.09.2021 ,8.09.2021 10:45,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2518
+24.08.2021,24.08.2021 16:54,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2549
+26.08.2021,26.08.2021 07:24,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1373
+14.09.2021,14.09.2021 11:10,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+12.09.2021,12.09.2021 10:54,Atlantis waterpark,HVAC KN3,Supply vent,N,S,1
+18.08.2021,18.08.2021 15:45,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2609
+12.08.2021,12.08.2021 11:48,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2646
+4.09.2021 ,4.09.2021 03:43,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2492
+18.08.2021,18.08.2021 15:08,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2595
+19.09.2021,19.09.2021 19:11,Atlantis waterpark,HVAC KN8,Extract vent,N,S,
+26.08.2021,26.08.2021 05:30,Atlantis waterpark,HVAC KN5,Supply temp,C,S,149
+15.08.2021,15.08.2021 01:20,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2432
+20.09.2021,20.09.2021 14:11,Atlantis waterpark,HVAC KN4,load supply ventilator,%,S,80
+12.08.2021,12.08.2021 11:25,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2797
+13.08.2021,13.08.2021 10:45,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2626
+13.08.2021,13.08.2021 20:44,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2857
+16.08.2021,16.08.2021 13:10,Atlantis waterpark,HVAC KN2,Extract temp,C,S,3097
+20.08.2021,20.08.2021 13:56,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2752
+27.08.2021,27.08.2021 06:54,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2483
+22.08.2021,22.08.2021 10:14,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2206
+13.09.2021,13.09.2021 07:10,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+16.09.2021,16.09.2021 07:11,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+21.08.2021,21.08.2021 16:35,Atlantis waterpark,HVAC KN6,Supply temp,C,S,296
+17.09.2021,17.09.2021 19:11,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+18.08.2021,18.08.2021 15:52,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2603
+11.08.2021,11.08.2021 18:37,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2712
+16.09.2021,16.09.2021 15:11,Atlantis waterpark,HVAC KN6,Extract temp,C,S,274
+10.09.2021,10.09.2021 09:40,Atlantis waterpark,HVAC KN9,Supply temp,C,S,1732
+12.08.2021,12.08.2021 06:00,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2155
+12.09.2021,12.09.2021 22:40,Atlantis waterpark,HVAC KN6,load supply ventilator,%,S,800000
+17.08.2021,17.08.2021 07:44,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2061
+20.08.2021,20.08.2021 11:41,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2358
+20.09.2021,20.09.2021 12:41,Atlantis waterpark,HVAC KN6,load supply ventilator,%,S,800000
+15.08.2021,15.08.2021 06:43,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2235
+16.08.2021,16.08.2021 07:57,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2769
+12.08.2021,12.08.2021 09:33,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2292
+4.09.2021 ,4.09.2021 10:26,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2472
+17.08.2021,17.08.2021 15:08,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2951
+15.08.2021,15.08.2021 02:10,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2401
+19.09.2021,19.09.2021 15:41,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+20.09.2021,20.09.2021 02:41,Atlantis waterpark,HVAC KN8,Supply temp,C,S,1678
+12.09.2021,12.09.2021 20:10,Atlantis waterpark,HVAC KN9,Extract temp,C,S,2953
+14.08.2021,14.08.2021 14:09,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3323
+14.08.2021,14.08.2021 08:44,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2363
+18.08.2021,18.08.2021 10:19,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2107
+1.09.2021 ,1.09.2021 07:11,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2389
+20.09.2021,20.09.2021 18:11,Atlantis waterpark,HVAC KN8,load supply ventilator,%,S,100
+14.09.2021,14.09.2021 06:10,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+24.08.2021,24.08.2021 04:59,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2275
+14.09.2021,14.09.2021 10:10,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2558
+9.08.2021 ,9.08.2021 20:33,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2612
+9.09.2021 ,9.09.2021 01:40,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2595
+17.09.2021,17.09.2021 12:41,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2706
+19.09.2021,19.09.2021 03:11,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2692
+21.08.2021,21.08.2021 15:43,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2951
+20.08.2021,20.08.2021 15:31,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2803
+16.08.2021,16.08.2021 09:03,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2846
+18.08.2021,18.08.2021 16:32,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2603
+31.08.2021,31.08.2021 17:07,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2449
+18.09.2021,18.09.2021 15:11,Atlantis waterpark,HVAC KN9,load extract ventilator,%,S,100
+12.08.2021,12.08.2021 09:34,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2252
+18.09.2021,18.09.2021 02:41,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+10.08.2021,10.08.2021 15:32,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2983
+14.08.2021,14.08.2021 11:42,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2823
+24.08.2021,24.08.2021 11:20,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2038
+14.08.2021,14.08.2021 18:23,Atlantis waterpark,HVAC KN6,Supply temp,C,S,332
+16.09.2021,16.09.2021 16:11,Atlantis waterpark,HVAC KN9,Supply temp,C,S,2405
+20.08.2021,20.08.2021 12:05,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2486
+16.09.2021,16.09.2021 19:11,Atlantis waterpark,HVAC KN6,load extract ventilator,%,S,800000
+15.09.2021,15.09.2021 09:40,Atlantis waterpark,HVAC KN8,Supply vent,N,S,
+12.08.2021,12.08.2021 13:34,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2912
+21.08.2021,21.08.2021 02:30,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2041
+16.08.2021,16.08.2021 07:43,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2361
+13.08.2021,13.08.2021 12:37,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2883
+21.09.2021,21.09.2021 00:11,Atlantis waterpark,HVAC KN9,Extract vent,N,S,
+1.09.2021 ,1.09.2021 20:10,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2572
+27.08.2021,27.08.2021 15:10,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2284
+28.08.2021,28.08.2021 03:39,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1621
+31.08.2021,31.08.2021 21:26,Atlantis waterpark,HVAC KN5,Supply temp,C,S,203
+15.08.2021,15.08.2021 17:18,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3194
+22.08.2021,22.08.2021 21:59,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2546
+16.09.2021,16.09.2021 22:11,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2837
+14.09.2021,14.09.2021 10:10,Atlantis waterpark,HVAC KN9,load extract ventilator,%,S,100
+26.08.2021,26.08.2021 21:35,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1927
+17.09.2021,17.09.2021 11:41,Atlantis waterpark,HVAC KN9,Extract temp,C,S,2926
+12.08.2021,12.08.2021 12:25,Atlantis waterpark,HVAC KN3,Supply temp,C,S,278
+15.09.2021,15.09.2021 19:10,Atlantis waterpark,HVAC KN8,load extract ventilator,%,S,100
+21.09.2021,21.09.2021 23:11,Atlantis waterpark,HVAC KN8,load supply ventilator,%,S,60
+20.09.2021,20.09.2021 09:11,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2443
+19.08.2021,19.08.2021 22:14,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2229
+18.08.2021,18.08.2021 15:47,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2649
+21.08.2021,21.08.2021 04:49,Atlantis waterpark,HVAC KN4,Supply temp,C,S,181
+8.09.2021 ,8.09.2021 17:10,Atlantis waterpark,HVAC KN2,freq converter,%,S,80
+11.08.2021,11.08.2021 16:06,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2598
+28.08.2021,28.08.2021 10:51,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2572
+14.09.2021,14.09.2021 04:40,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2632
+14.09.2021,14.09.2021 15:40,Atlantis waterpark,HVAC KN9,Extract temp,C,S,3058
+14.09.2021,14.09.2021 10:40,Atlantis waterpark,HVAC KN9,Supply vent,N,S,
+13.08.2021,13.08.2021 10:55,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2623
+11.09.2021,11.09.2021 04:40,Atlantis waterpark,HVAC KN8,load supply ventilator,%,S,60
+20.09.2021,20.09.2021 02:41,Atlantis waterpark,HVAC KN5,load extract ventilator,%,S,80
+18.09.2021,18.09.2021 06:11,Atlantis waterpark,HVAC KN9,load supply ventilator,%,S,60
+10.08.2021,10.08.2021 17:15,Atlantis waterpark,HVAC KN3,Supply temp,C,S,3031
+19.08.2021,19.08.2021 08:18,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1724
+17.08.2021,17.08.2021 00:50,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2329
+11.08.2021,11.08.2021 16:35,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2806
+6.09.2021 ,6.09.2021 03:43,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2532
+26.08.2021,26.08.2021 12:31,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2149
+21.09.2021,21.09.2021 03:41,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2435
+15.08.2021,15.08.2021 15:16,Atlantis waterpark,HVAC KN6,Supply temp,C,S,3348
+15.08.2021,15.08.2021 10:33,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2637
+11.08.2021,11.08.2021 04:22,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2255
+27.08.2021,27.08.2021 15:05,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2372
+20.09.2021,20.09.2021 16:11,Atlantis waterpark,HVAC KN2,Extract temp,C,S,258
+20.09.2021,20.09.2021 08:11,Atlantis waterpark,HVAC KN6,load supply ventilator,%,S,800000
+15.08.2021,15.08.2021 18:19,Atlantis waterpark,HVAC KN2,Extract temp,C,S,3226
+12.09.2021,12.09.2021 19:40,Atlantis waterpark,HVAC KN9,load extract ventilator,%,S,100
+14.09.2021,14.09.2021 05:10,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2632
+14.08.2021,14.08.2021 19:11,Atlantis waterpark,HVAC KN2,Supply temp,C,S,3365
+21.09.2021,21.09.2021 20:11,Atlantis waterpark,HVAC KN6,load supply ventilator,%,S,800000
+13.09.2021,13.09.2021 08:40,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+15.08.2021,15.08.2021 13:02,Atlantis waterpark,HVAC KN2,Extract temp,C,S,3194
+22.08.2021,22.08.2021 10:02,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2138
+21.08.2021,21.08.2021 12:53,Atlantis waterpark,HVAC KN6,Extract temp,C,S,2732
+20.08.2021,20.08.2021 17:12,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2797
+15.08.2021,15.08.2021 20:34,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2912
+20.08.2021,20.08.2021 11:19,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2295
+17.08.2021,17.08.2021 01:36,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2069
+26.08.2021,26.08.2021 15:22,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2386
+21.09.2021,21.09.2021 16:41,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2832
+20.08.2021,20.08.2021 02:04,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1978
+11.08.2021,11.08.2021 09:55,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2435
+1.09.2021 ,1.09.2021 02:36,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2435
+18.09.2021,18.09.2021 11:11,Atlantis waterpark,HVAC KN8,load supply ventilator,%,S,100
+15.09.2021,15.09.2021 09:10,Atlantis waterpark,HVAC KN4,load extract ventilator,%,S,80
+17.08.2021,17.08.2021 23:38,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1898
+9.08.2021 ,9.08.2021 13:23,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2589
+23.08.2021,23.08.2021 15:27,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1947
+4.09.2021 ,4.09.2021 01:02,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+26.08.2021,26.08.2021 05:53,Atlantis waterpark,HVAC KN5,Supply temp,C,S,1493
+16.08.2021,16.08.2021 03:52,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2332
+14.09.2021,14.09.2021 20:40,Atlantis waterpark,HVAC KN9,Extract vent,N,S,
+28.08.2021,28.08.2021 10:46,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1644
+20.09.2021,20.09.2021 11:41,Atlantis waterpark,HVAC KN8,load supply ventilator,%,S,100
+16.09.2021,16.09.2021 20:11,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2852
+21.09.2021,21.09.2021 09:11,Atlantis waterpark,HVAC KN4,Extract temp,C,S,2452
+15.09.2021,15.09.2021 01:10,Atlantis waterpark,HVAC KN9,Extract temp,C,S,2898
+19.08.2021,19.08.2021 12:19,Atlantis waterpark,HVAC KN6,load extract ventilator,%,S,800000
+19.09.2021,19.09.2021 16:41,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2757
+23.08.2021,23.08.2021 02:49,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2375
+18.09.2021,18.09.2021 04:11,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+16.09.2021,16.09.2021 08:41,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+22.08.2021,22.08.2021 13:51,Atlantis waterpark,HVAC KN2,Extract temp,C,S,3043
+13.08.2021,13.08.2021 16:16,Atlantis waterpark,HVAC KN2,Extract temp,C,S,302
+10.09.2021,10.09.2021 21:40,Atlantis waterpark,HVAC KN4,load supply ventilator,%,S,80
+20.08.2021,20.08.2021 00:40,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1995
+16.09.2021,16.09.2021 05:41,Atlantis waterpark,HVAC KN8,Extract vent,N,S,
+2.09.2021 ,2.09.2021 22:13,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1855
+21.08.2021,21.08.2021 13:26,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2749
+26.08.2021,26.08.2021 12:51,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2167
+11.08.2021,11.08.2021 10:57,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2857
+26.08.2021,26.08.2021 04:54,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2272
+6.09.2021 ,6.09.2021 01:22,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1604
+22.08.2021,22.08.2021 14:05,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2772
+17.08.2021,17.08.2021 22:31,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2012
+16.08.2021,16.08.2021 19:18,Atlantis waterpark,HVAC KN4,Supply temp,C,S,3054
+19.09.2021,19.09.2021 11:11,Atlantis waterpark,HVAC KN5,Extract temp,C,S,2697
+20.08.2021,20.08.2021 11:31,Atlantis waterpark,HVAC KN4,Supply temp,C,S,2403
+29.08.2021,29.08.2021 10:32,Atlantis waterpark,HVAC KN2,Supply temp,C,S,165
+19.08.2021,19.08.2021 16:52,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2806
+23.08.2021,23.08.2021 20:00,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1952
+11.09.2021,11.09.2021 18:10,Atlantis waterpark,HVAC KN3,freq converter,%,S,80
+20.09.2021,20.09.2021 18:41,Atlantis waterpark,HVAC KN8,Extract vent,N,S,
+12.08.2021,12.08.2021 14:49,Atlantis waterpark,HVAC KN6,Supply temp,C,S,3009
+12.09.2021,12.09.2021 09:10,Atlantis waterpark,HVAC KN8,Supply temp,C,S,1708
+18.09.2021,18.09.2021 20:41,Atlantis waterpark,HVAC KN8,Extract temp,C,S,2807
+24.08.2021,24.08.2021 12:33,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2198
+10.09.2021,10.09.2021 23:40,Atlantis waterpark,HVAC KN5,load supply ventilator,%,S,80
+14.08.2021,14.08.2021 08:35,Atlantis waterpark,HVAC KN3,Supply temp,C,S,2338
+17.09.2021,17.09.2021 11:41,Atlantis waterpark,HVAC KN9,Supply temp,C,S,2051
+6.09.2021 ,6.09.2021 11:58,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2289
+27.08.2021,27.08.2021 12:22,Atlantis waterpark,HVAC KN6,Supply temp,C,S,1992
+25.08.2021,25.08.2021 05:44,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2315
+31.08.2021,31.08.2021 09:43,Atlantis waterpark,HVAC KN2,Supply temp,C,S,1456
+20.08.2021,20.08.2021 02:28,Atlantis waterpark,HVAC KN4,Supply temp,C,S,1912
+13.09.2021,13.09.2021 23:10,Atlantis waterpark,HVAC KN9,Extract vent,N,S,
+20.08.2021,20.08.2021 16:57,Atlantis waterpark,HVAC KN6,Supply temp,C,S,2843
+18.09.2021,18.09.2021 02:11,Atlantis waterpark,HVAC KN3,Extract temp,C,S,2458
+31.08.2021,31.08.2021 07:02,Atlantis waterpark,HVAC KN2,Extract temp,C,S,2492
+14.08.2021,14.08.2021 11:49,Atlantis waterpark,HVAC KN2,Supply temp,C,S,3031
+27.08.2021,27.08.2021 16:20,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2195
+24.08.2021,24.08.2021 13:27,Atlantis waterpark,HVAC KN2,Supply temp,C,S,2426
+28.08.2021,28.08.2021 15:18,Atlantis waterpark,HVAC KN2,Extract temp,C,S,264
+26.08.2021,26.08.2021 21:30,Atlantis waterpark,HVAC KN5,Supply temp,C,S,2107

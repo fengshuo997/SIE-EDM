@@ -1,0 +1,46 @@
+version: '3.8'
+services:
+
+  fastapi-app:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8002"
+    depends_on:
+      #- redis
+      - mysql
+      - neo4j
+    #environment:
+    #  - REDIS_HOST=redis
+    volumes:
+      - ./core:/smobem/core
+
+  #redis:
+  #  image: redis:latest
+  #  ports:
+  #    - "6379:6379"
+
+
+  mysql:
+    image: mysql:${MYSQL_VERSION:-latest}
+    container_name: brave_lamport
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-12345678}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-12345678}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-energydata}
+    restart: always
+    ports:
+      - "3306:3306"
+
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j-1
+    restart: always
+    ports:
+      - "7687:7687"
+      - "7473:7473"
+      - "7474:7474"
