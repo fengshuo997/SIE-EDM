@@ -64,6 +64,8 @@ def to_database(data, column_structure, mysql_engine_data):
             pass
         else:
             table_name = str(selected_df.loc[0]['uuid'])
+            print(table_name)
+            print(selected_df)
             selected_df.to_sql(table_name, con=engine, if_exists='replace', chunksize=1000)
     return
 

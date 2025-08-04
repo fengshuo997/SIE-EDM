@@ -90,4 +90,4 @@ ENV/
 .ropeproject
 
 # data files
-.data
+.example/raw_data/sample_data.csv
