@@ -63,21 +63,21 @@ def query_experiment_single_database(neo4j_g, data_sample, column_structure, ta,
   neo4j_g.run("MATCH (n) DETACH DELETE n")
   kg_s = csv_to_neo4j_s(g=neo4j_g, data=data_sample, ta=ta, cta=cta, column_structure=column_structure)
   db_generate_end = time.time()
-  experiment_result.loc[n]['Database Generate time (methode_singleDatabase) [s]'] = db_generate_end - db_generate_start
+  experiment_result.loc[n, 'Database Generate time (methode_singleDatabase) [s]'] = db_generate_end - db_generate_start
   print(' Response time for generate database of single databases methode: ', db_generate_end - db_generate_start)
-  experiment_result.loc[n]['Database size (methode_singleDatabase) [KB]'] = neo4j_databasesize_count(neo4j_g)
+  experiment_result.loc[n, 'Database size (methode_singleDatabase) [KB]'] = neo4j_databasesize_count(neo4j_g)
   print(' Database size of single databases methode: ', neo4j_databasesize_count(neo4j_g), 'KB')
     # Query time-point (methode_singleDatabase) use cypher
   match_start = time.time()
   tp_match_neo4j = match_s_cypher_timepoint(g=kg_s, matchname1=matchname1, matchname2=matchname2,timestamp=Timestamp)
   match_end = time.time()
-  experiment_result.loc[n]['Query time-point (methode_singleDatabase)'] = match_end - match_start
+  experiment_result.loc[n, 'Query time-point (methode_singleDatabase)'] = match_end - match_start
   print('The query result of single database methode: ',tp_match_neo4j,' Response time: ',match_end-match_start)
     # Query time-range  (methode_singleDatabase)
   match_start = time.time()
   tr_match_neo4j = match_s_cypher_timerange(g=kg_s, matchname1=matchname1, matchname2=matchname2, timerange=Timerange)
   match_end = time.time()
-  experiment_result.loc[n]['Query time-range (methode_singleDatabase)'] = match_end - match_start
+  experiment_result.loc[n, 'Query time-range (methode_singleDatabase)'] = match_end - match_start
   print('The query result of single database methode for time range: ')
   print(tr_match_neo4j)
   print(' Response time: ', match_end - match_start)
@@ -85,7 +85,7 @@ def query_experiment_single_database(neo4j_g, data_sample, column_structure, ta,
   match_start = time.time()
   ta_match_neo4j = match_s_cypher_timeaverage(g=kg_s, matchname1=matchname1, matchname2=matchname2,timerange=Timerange)
   match_end = time.time()
-  experiment_result.loc[n]['Query time-average (methode_singleDatabase)'] = match_end - match_start
+  experiment_result.loc[n, 'Query time-average (methode_singleDatabase)'] = match_end - match_start
   print('The query result of single database methode for average in time range: ')
   print(ta_match_neo4j)
   print(' Response time: ', match_end - match_start)

@@ -46,17 +46,42 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                          graphcontainer.columns[2]: [timeseries_id]})
                     graphcontainer = pd.concat([graphcontainer, timeseries_id_row], ignore_index=True)
         else:  # generate the knowledge graph for the end column
-            for x in set(data[column_structure[0][n-1]]):
-                selected_df = data.loc[data[column_structure[0][n-1]] == x]
-                for i in set(selected_df[column_structure[0][n]]):
-                    new_row = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: cta[column_structure[0][n]],graphcontainer.columns[2]: i})
-                    id_str = str(x + i)
+            cols = column_structure[0]
+            timeseries_id_row = []
+            for level in range(1, len(cols)):
+                prev_col = cols[level - 1]
+                curr_col = cols[level]
+                uniq = data[cols]
+                for _, row in uniq.iterrows():
+                    path_values = [row[c] for c in cols]
+                    id_str = '||'.join('' if pd.isna(v) else str(v) for v in path_values)
                     timeseries_id = hashlib.md5(id_str.encode()).hexdigest()
-                    timeseries_id_row_lower = pd.DataFrame({graphcontainer.columns[0]: i, graphcontainer.columns[1]: ['hasTimeseriesId'],graphcontainer.columns[2]: [timeseries_id]})
-                    timeseries_id_row_higher = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: ['hasTimeseriesId'],graphcontainer.columns[2]: [timeseries_id]})
-                    graphcontainer = pd.concat([graphcontainer, new_row], ignore_index=True)
-                    graphcontainer = pd.concat([graphcontainer, timeseries_id_row_lower], ignore_index=True)
-                    graphcontainer = pd.concat([graphcontainer, timeseries_id_row_higher], ignore_index=True)
+
+                    timeseries_id_row.append({
+                        graphcontainer.columns[0]: row[prev_col],
+                        graphcontainer.columns[1]: cta[curr_col][0],
+                        graphcontainer.columns[2]: row[curr_col]
+                    })
+                    nodes = list(dict.fromkeys(path_values))
+                    for node in nodes:
+                        timeseries_id_row.append({
+                            graphcontainer.columns[0]: node,
+                            graphcontainer.columns[1]: 'hasTimeseriesId',
+                            graphcontainer.columns[2]: timeseries_id
+                        })
+            graphcontainer = pd.concat([graphcontainer, pd.DataFrame(timeseries_id_row)], ignore_index=True)
+
+            # for x in set(data[column_structure[0][n-1]]):
+            #     selected_df = data.loc[data[column_structure[0][n-1]] == x]
+            #     for i in set(selected_df[column_structure[0][n]]):
+            #         new_row = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: cta[column_structure[0][n]],graphcontainer.columns[2]: i})
+            #         id_str = str(x + i)
+            #         timeseries_id = hashlib.md5(id_str.encode()).hexdigest()
+            #         timeseries_id_row_lower = pd.DataFrame({graphcontainer.columns[0]: i, graphcontainer.columns[1]: ['hasTimeseriesId'],graphcontainer.columns[2]: [timeseries_id]})
+            #         timeseries_id_row_higher = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: ['hasTimeseriesId'],graphcontainer.columns[2]: [timeseries_id]})
+            #         graphcontainer = pd.concat([graphcontainer, new_row], ignore_index=True)
+            #         graphcontainer = pd.concat([graphcontainer, timeseries_id_row_lower], ignore_index=True)
+            #         graphcontainer = pd.concat([graphcontainer, timeseries_id_row_higher], ignore_index=True)
     for index,row in graphcontainer.loc[graphcontainer['Property']=='hasTimeseriesId'].iterrows():
         cypher_generate = """
             MERGE (start_node:Subject {name: $row0})

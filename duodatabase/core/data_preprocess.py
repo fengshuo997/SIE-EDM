@@ -78,7 +78,7 @@ def csv_id_generation(df, column_structure):
         df['uuid'] = id
         return df
     else:
-        df_t = df[column_structure[0]].sum(axis=1).map(lambda x:hashlib.md5(str(x).encode()).hexdigest())
+        df_t = (df[column_structure[0]].apply(lambda r: '||'.join('' if pd.isna(v) else str(v) for v in r), axis=1).map(lambda s: hashlib.md5(s.encode('utf-8')).hexdigest()))
         df_t.name = 'uuid'
         df = df.join(df_t)
         return df
