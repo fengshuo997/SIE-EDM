@@ -1,4 +1,4 @@
-
+import time
 import pandas as pd
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -32,7 +32,6 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                 """ + """MERGE (start_node)-[r: {relation_type}]->(end_node)""".format(relation_type=row.iloc[1])
             g.run(cypher_generate, row0=row.iloc[0], row2=row.iloc[2])
         return g
-
     for n in range(len(column_structure[0])):  # generate the knowledge graph for column structure
         if n==0:  # generate the knowledge graph for ta
             for x in set(data[column_structure[0][n]]):
@@ -70,18 +69,6 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                             graphcontainer.columns[2]: timeseries_id
                         })
             graphcontainer = pd.concat([graphcontainer, pd.DataFrame(timeseries_id_row)], ignore_index=True)
-
-            # for x in set(data[column_structure[0][n-1]]):
-            #     selected_df = data.loc[data[column_structure[0][n-1]] == x]
-            #     for i in set(selected_df[column_structure[0][n]]):
-            #         new_row = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: cta[column_structure[0][n]],graphcontainer.columns[2]: i})
-            #         id_str = str(x + i)
-            #         timeseries_id = hashlib.md5(id_str.encode()).hexdigest()
-            #         timeseries_id_row_lower = pd.DataFrame({graphcontainer.columns[0]: i, graphcontainer.columns[1]: ['hasTimeseriesId'],graphcontainer.columns[2]: [timeseries_id]})
-            #         timeseries_id_row_higher = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: ['hasTimeseriesId'],graphcontainer.columns[2]: [timeseries_id]})
-            #         graphcontainer = pd.concat([graphcontainer, new_row], ignore_index=True)
-            #         graphcontainer = pd.concat([graphcontainer, timeseries_id_row_lower], ignore_index=True)
-            #         graphcontainer = pd.concat([graphcontainer, timeseries_id_row_higher], ignore_index=True)
     for index,row in graphcontainer.loc[graphcontainer['Property']=='hasTimeseriesId'].iterrows():
         cypher_generate = """
             MERGE (start_node:Subject {name: $row0})
@@ -109,7 +96,6 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                 for i in set(selected_df[k]):
                     new_row = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: cta[k],graphcontainer.columns[2]: i})
                     graphcontainer = pd.concat([graphcontainer, new_row], ignore_index=True)
-
     for index, row in graphcontainer.iterrows():  # generate graph
         cypher_generate = """
             MERGE (start_node:Subject {name: $row0})
@@ -169,7 +155,6 @@ def csv_to_neo4j_s(g, data, ta, cta, column_structure):
     return g
 
 def cypher_generate_process(g, x, i,selected_df, selected_df_2, column_structure, cta):
-    print('generate cypher kg')
     cypher_generate = """
                     MATCH (start_node:Subject {name: $row0})
                     MERGE (end_node:Subject {name: $row2})

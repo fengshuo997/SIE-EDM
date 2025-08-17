@@ -123,9 +123,10 @@ def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysq
         # select experiment data sample
         matchname1 = matchname[0]
         matchname2 = matchname[1]
+        matchname3 = matchname[2]
         Timestamp = query_time['timestamp']
         Timerange = query_time['range']
-        tagetrow = data.loc[(data['ENERGY_SOURCE'] == matchname1) & (data['MEASURE'] == matchname2)]
+        tagetrow = data.loc[(data['ENERGY_SOURCE'] == matchname1) & (data['MEASURE'] == matchname2) & (data['TIMESTAMP'] == matchname3)]
         if n==0:
             experiment_result.loc[0] = 0
             # Close connection before continue
