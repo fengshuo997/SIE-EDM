@@ -111,9 +111,15 @@ def query_timeaverage(id, time_range, cursor):
     return df.iloc[0]['average_value']
 
 def count_database_size(cursor, mysql_database_name):
-    cursor.execute("SELECT table_schema, ROUND(SUM(data_length + index_length) / 1024, 1) AS 'Size (KB)' FROM information_schema.tables WHERE table_schema = '{mysql_database_name}' GROUP BY table_schema".format(mysql_database_name=mysql_database_name))
-    result = cursor.fetchall()
-    if result:
-        if result[0]==mysql_database_name:
-            return float(result[1])
-    return 0
+    sql = """
+        SELECT ROUND(
+            COALESCE(SUM(COALESCE(data_length,0) + COALESCE(index_length,0)), 0) / 1024
+        , 1) AS size_kb
+        FROM information_schema.tables
+        WHERE table_schema = %s
+          AND table_type = 'BASE TABLE';
+    """
+    cursor.execute(sql, (mysql_database_name,))
+    row = cursor.fetchone()
+    return float(row[0] or 0.0)
+

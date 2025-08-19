@@ -12,7 +12,7 @@ def query_experiment_duodatabase(neo4j_g, mysql_conn,data_sample, column_structu
   db_generate_end = time.time()
   experiment_result.loc[n, 'Database Generate time (methode_doubleDatabases) [s]'] = db_generate_end - db_generate_start
   print(' Response time for generate database of double databases methode: ', db_generate_end - db_generate_start)
-  neo4j_database_size = neo4j_databasesize_count(neo4j_g)
+  neo4j_database_size = neo4j_databasesize_count(kg)
   mysql_database_size = count_database_size(cursor=mysql_cursor, mysql_database_name=mysql_engine_data[2])
   total_database_size = neo4j_database_size + mysql_database_size
   experiment_result.loc[n, 'Database size (methode_doubleDatabases) [KB]'] = total_database_size
@@ -27,7 +27,6 @@ def query_experiment_duodatabase(neo4j_g, mysql_conn,data_sample, column_structu
     # Query time-point (methode_doubleDatabases)
   match_start = time.time()
   match = match_cypher(kg, matchname1=matchname1, matchname2=matchname2)
-  print(match)
   neo4j_end = time.time()
   double_tp_value = query(id=match, time=Timestamp, cursor=mysql_cursor)
   match_end = time.time()
@@ -65,8 +64,8 @@ def query_experiment_single_database(neo4j_g, data_sample, column_structure, ta,
   db_generate_end = time.time()
   experiment_result.loc[n, 'Database Generate time (methode_singleDatabase) [s]'] = db_generate_end - db_generate_start
   print(' Response time for generate database of single databases methode: ', db_generate_end - db_generate_start)
-  experiment_result.loc[n, 'Database size (methode_singleDatabase) [KB]'] = neo4j_databasesize_count(neo4j_g)
-  print(' Database size of single databases methode: ', neo4j_databasesize_count(neo4j_g), 'KB')
+  experiment_result.loc[n, 'Database size (methode_singleDatabase) [KB]'] = neo4j_databasesize_count(kg_s)
+  print(' Database size of single databases methode: ', neo4j_databasesize_count(kg_s), 'KB')
     # Query time-point (methode_singleDatabase) use cypher
   match_start = time.time()
   tp_match_neo4j = match_s_cypher_timepoint(g=kg_s, matchname1=matchname1, matchname2=matchname2,timestamp=Timestamp)
@@ -96,7 +95,7 @@ def query_experiment_sdfrdfizer(data=pd.DataFrame, neo4j_g=None, mysql_cursor=No
 
 
 
-def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysql_engine_data = [], mysql_database_name=None, ta=None, cta=None, column_structure=None, matchname=None, query_time=None, datasize=120000,sp=10):
+def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysql_engine_data = [], mysql_database_name=None, ta=None, cta=None, column_structure=None, matchname=None, query_time=None, datasize=120000,sp=3):
     datasize_sample = [int(datasize/sp * i) for i in range(sp+1)]
     print(datasize_sample)
 
@@ -119,6 +118,14 @@ def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysq
         import pymysql
         mysql_conn = pymysql.connect(port=3306, user=mysql_engine_data[0], password=mysql_engine_data[1], database=mysql_engine_data[2])
         mysql_cursor = mysql_conn.cursor()
+        # 在 mysql_cursor = mysql_conn.cursor() 之后
+        mysql_cursor.execute("SET FOREIGN_KEY_CHECKS=0")
+        mysql_cursor.execute("SHOW TABLES")
+        tables = [row[0] for row in mysql_cursor.fetchall()]
+        for t in tables:
+            mysql_cursor.execute(f"TRUNCATE TABLE `{t}`")
+        mysql_cursor.execute("SET FOREIGN_KEY_CHECKS=1")
+        mysql_conn.commit()
         
         # select experiment data sample
         matchname1 = matchname[0]

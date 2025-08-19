@@ -69,21 +69,14 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                             graphcontainer.columns[2]: timeseries_id
                         })
             graphcontainer = pd.concat([graphcontainer, pd.DataFrame(timeseries_id_row)], ignore_index=True)
-    for index,row in graphcontainer.loc[graphcontainer['Property']=='hasTimeseriesId'].iterrows():
-        cypher_generate = """
-            MERGE (start_node:Subject {name: $row0})
-            MERGE (end_node:`Timeseries id` {name: $row2, type:'timeseries id'})
-            MERGE (start_node)-[r:hasTimeseriesId]->(end_node)
-            """
-        g.run(cypher_generate, row0=row.iloc[0], row2=row.iloc[2])
-        graphcontainer = graphcontainer.drop(index)
-    for index, row in graphcontainer.iterrows():  # generate graph
+            break
+
+    for _, row in graphcontainer.iterrows():  # generate graph
         cypher_generate = """
             MERGE (start_node:Subject {name: $row0})
             MERGE (end_node:Subject {name: $row2})
             """ + """MERGE (start_node)-[r: {relation_type}]->(end_node)""".format(relation_type=row.iloc[1])
         g.run(cypher_generate, row0=row.iloc[0], row2=row.iloc[2])
-
     # generate knowledge graph for the rest lower level of column structure
     graphcontainer = pd.DataFrame(columns=['Subject', 'Property', 'Object'])
     for x in set(data[column_structure[0][-1]]):
@@ -96,13 +89,12 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                 for i in set(selected_df[k]):
                     new_row = pd.DataFrame({graphcontainer.columns[0]: x, graphcontainer.columns[1]: cta[k],graphcontainer.columns[2]: i})
                     graphcontainer = pd.concat([graphcontainer, new_row], ignore_index=True)
-    for index, row in graphcontainer.iterrows():  # generate graph
+    for _, row in graphcontainer.iterrows():  # generate graph
         cypher_generate = """
             MERGE (start_node:Subject {name: $row0})
             MERGE (end_node:Subject {name: $row2})
             """ + """MERGE (start_node)-[r: {relation_type}]->(end_node)""".format(relation_type=row.iloc[1])
         g.run(cypher_generate, row0=row.iloc[0], row2=row.iloc[2])
-
     return g
 
 def csv_to_neo4j_s(g, data, ta, cta, column_structure):
@@ -353,12 +345,10 @@ def match_s_cypher_timeaverage(g, matchname1='Supply temp', matchname2='HVAC KN4
     return result
 
 def neo4j_databasesize_count(g):
-        node_c = g.run("MATCH (n) RETURN COUNT(n) AS nodeCount")
-        relation_c = g.run("MATCH ()-[r]->() RETURN COUNT(r) AS relationshipCount")
-        property_c = g.run("MATCH (n) RETURN SIZE(keys(n)) AS propertyCount")
-        nc_int = node_c.single()['nodeCount']
-        rc_int = relation_c.single()['relationshipCount']
-        pc_int = property_c.single()['propertyCount']
-        database_size = nc_int*12 + rc_int*34 + pc_int*41
-        return database_size/1024
+    node_c = g.run("MATCH (n) RETURN count(n) AS nodeCount").single()["nodeCount"]
+    rel_c  = g.run("MATCH ()-[r]->() RETURN count(r) AS relationshipCount").single()["relationshipCount"]
+    prop_c = g.run("MATCH (n) RETURN sum(size(keys(n))) AS propertyCount").single()["propertyCount"]
+    database_size = node_c*12 + rel_c*34 + prop_c*41
+    return database_size / 1024
+
 

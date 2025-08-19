@@ -28,7 +28,7 @@ def connect_neo4j(neo4j_container_id, neo4j_ip, neo4j_user, neo4j_password):
 def connect_mysql(mysql_port, mysql_user, mysql_password, mysql_database_name):
     conn = pymysql.connect(port= mysql_port, user =mysql_user, password=mysql_password )
     cursor = conn.cursor()
-    cursor.execute("drop database {name}".format(name=mysql_database_name))
+    cursor.execute("DROP DATABASE IF EXISTS {name}".format(name=mysql_database_name))
     cursor.execute("create database IF NOT EXISTS {name} default charset utf8 collate utf8_general_ci".format(name=mysql_database_name))  # create database
     conn = pymysql.connect(port= mysql_port, user =mysql_user, password=mysql_password, database= mysql_database_name)
     cursor = conn.cursor()
