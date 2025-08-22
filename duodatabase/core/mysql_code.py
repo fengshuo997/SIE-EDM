@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from .to_neo4j import *
 from .data_preprocess import convert_to_desired_format
 
-def to_database(data, column_structure, mysql_engine_data):
+def to_mysqldatabase(data, column_structure, mysql_engine_data):
     engine = create_engine("mysql+pymysql://{user}:{pw}@localhost/{db}".format(user=mysql_engine_data[0], pw=mysql_engine_data[1], db=mysql_engine_data[2]))
     selected_df = pd.DataFrame()
     column_list = []
@@ -110,16 +110,17 @@ def query_timeaverage(id, time_range, cursor):
     df.columns = [desc[0] for desc in cursor.description]
     return df.iloc[0]['average_value']
 
-def count_database_size(cursor, mysql_database_name):
+def count_database_size(conn, mysql_database_name):
     sql = """
         SELECT ROUND(
-            COALESCE(SUM(COALESCE(data_length,0) + COALESCE(index_length,0)), 0) / 1024
+            COALESCE(COALESCE(data_length,0), 0) / 1024
         , 1) AS size_kb
         FROM information_schema.tables
         WHERE table_schema = %s
           AND table_type = 'BASE TABLE';
     """
-    cursor.execute(sql, (mysql_database_name,))
-    row = cursor.fetchone()
-    return float(row[0] or 0.0)
+    with conn.cursor() as cursor:
+        cursor.execute(sql, (mysql_database_name,))
+        row = cursor.fetchone()
+        return float(row[0] or 0.0)
 

@@ -69,6 +69,7 @@ def csv_to_neo4j(g, data, ta, cta, column_structure):
                             graphcontainer.columns[2]: timeseries_id
                         })
             graphcontainer = pd.concat([graphcontainer, pd.DataFrame(timeseries_id_row)], ignore_index=True)
+            graphcontainer = graphcontainer.drop_duplicates()
             break
 
     for _, row in graphcontainer.iterrows():  # generate graph
@@ -136,14 +137,29 @@ def csv_to_neo4j_s(g, data, ta, cta, column_structure):
                                             MATCH (existing_node_level1: Subject {name: $x})-[relation]->(existing_node_level2: Subject {name: $i})
                                             MERGE (end_node:Subject {name: $j})
                                             """ + """MERGE (existing_node_level2)-[r: {relation_type}]->(end_node)""".format(relation_type=cta[column_structure[0][2]][0])
+                                            
                     g.run(cypher_generate, x=x, i=i, j=j)
                 for q in range(len(column_structure[1])):
-                    for k in set(selected_df_3[column_structure[1][q]]):
-                        cypher_generate = ("""MATCH (existing_node_level2: Subject {name: $i})-[relation]->(existing_node_level3: Subject {name: $j})
-                        """ + """MERGE (end_node:{node_type}""".format(node_type=column_structure[1][q]) + """{name: $k})
-                        """
-                        + """MERGE (existing_node_level3)-[r: {relation_type}]->(end_node)""".format(relation_type=cta[column_structure[1][q]][0]))
-                        g.run(cypher_generate,i=i, j=j, k=k)
+                    if column_structure[1][q]=='TIMESTAMP':
+                        for k, v in zip(selected_df_3['TIMESTAMP'], selected_df_3['VALUE']):
+                            k = convert_to_desired_format(k, "%Y-%m-%dT%H:%M:%S")
+                            node_label = column_structure[1][q]                    
+                            rel_type  = cta[column_structure[1][q]][0]               
+                            value_label = 'VALUE'
+                            cypher_generate = f"""
+                                MATCH (existing_node_level2:Subject {{name: $i}})-[relation]->(existing_node_level3:Subject {{name: $j}})
+                                MERGE (end_node:{node_label} {{name: $k}})
+                                MERGE (existing_node_level3)-[:{rel_type}]->(end_node)
+                                MERGE (end_node)-[:hasValue]->(value_node:{value_label} {{name: $v}})
+                                """
+                            g.run(cypher_generate,i=i, j=j, k=k ,v=v)
+                    else:
+                        for k in set(selected_df_3[column_structure[1][q]]):
+                            cypher_generate = ("""MATCH (existing_node_level2: Subject {name: $i})-[relation]->(existing_node_level3: Subject {name: $j})
+                            """ + """MERGE (end_node:{node_type}""".format(node_type=column_structure[1][q]) + """{name: $k})
+                            """
+                            + """MERGE (existing_node_level3)-[r: {relation_type}]->(end_node)""".format(relation_type=cta[column_structure[1][q]][0]))
+                            g.run(cypher_generate,i=i, j=j, k=k)
     return g
 
 def cypher_generate_process(g, x, i,selected_df, selected_df_2, column_structure, cta):
@@ -282,7 +298,7 @@ def match_cypher(g, matchname1='HVAC KN4',matchname2='Supply temp'):  #只考虑
         return timeseriesId[0]
 
 
-#def match_s(g, matchname1='Supply temp', matchname2='HVAC KN4', timestamp='16.08.2021 07:43'):  #只考虑了两个变量的情况
+#def match_s(g, matchname1='Supply temp', matchname2='HVAC KN4', timestamp='16.08.2021 07:43'):  
 #    matcher = py2neo.NodeMatcher(g)
 #    match_node_1 = matcher.match(name=matchname1).first()
 #    match1 = list(r.end_node for r in g.match(nodes=(match_node_1,)))
@@ -297,10 +313,12 @@ def match_cypher(g, matchname1='HVAC KN4',matchname2='Supply temp'):  #只考虑
 #                            return end_node['name']
 #    return
 
-def match_s_cypher_timepoint(g, matchname1='Supply temp', matchname2='HVAC KN4', timestamp='16.08.2021 07:43'):  #只考虑了两个变量的情况
+def match_s_cypher_timepoint(g, matchname1='Supply temp', matchname2='HVAC KN4', timestamp='16.08.2021 07:43'):  # only for experiment
+    timestamp = convert_to_desired_format(timestamp, "%Y-%m-%dT%H:%M:%S")
     cypher_query = """
     MATCH (n:Subject {name: $matchname1})-[*]->(n2:Subject {name: $matchname2})
-    MATCH (n2)-[*]->(ts:Subject {name: $timestamp})
+    MATCH (n2)-[location]->(n3)
+    MATCH (n3)-[*]->(ts:TIMESTAMP {name: $timestamp})
     MATCH (ts)-[*]->(value:VALUE)
     RETURN value.name
     """
@@ -312,17 +330,18 @@ def match_s_cypher_timepoint(g, matchname1='Supply temp', matchname2='HVAC KN4',
         return []
     return value[0]
 
-def match_s_cypher_timerange(g, matchname1='Supply temp', matchname2='HVAC KN4', timerange=['02.01.2021  00:00','31.03.2021  23:00']):  #只考虑了两个变量的情况
+def match_s_cypher_timerange(g, matchname1='Supply temp', matchname2='HVAC KN4', timerange=['02.01.2021  00:00','31.03.2021  23:00']):  
     start_time_string = timerange[0]
     start_time_neo4j_str = convert_to_desired_format(start_time_string,"%Y-%m-%dT%H:%M:%S")
     end_time_string = timerange[1]
     end_time_neo4j_str = convert_to_desired_format(end_time_string,"%Y-%m-%dT%H:%M:%S")
     cypher_query = """
     MATCH (n:Subject {name: $matchname1})-[*]->(n2:Subject {name: $matchname2})
-    MATCH (n2)-[hasTimestamp]->(ts)
+    MATCH (n2)-[location]->(n3)
+    MATCH (n3)-[*]->(ts:TIMESTAMP)
     MATCH (ts)-[*]->(value:VALUE)
-    WHERE ts.timestamp >= $start_time AND ts.timestamp <= $end_time
-    RETURN ts.timestamp AS Timestamp, value.name AS VALUE
+    WHERE ts.name >= $start_time AND ts.name <= $end_time
+    RETURN ts.name AS Timestamp, value.name AS VALUE
     """
     match_result = g.run(cypher_query, matchname1=matchname1, matchname2=matchname2, start_time=start_time_neo4j_str, end_time=end_time_neo4j_str)
     result = pd.DataFrame([dict(record) for record in match_result])
@@ -330,19 +349,22 @@ def match_s_cypher_timerange(g, matchname1='Supply temp', matchname2='HVAC KN4',
 
 def match_s_cypher_timeaverage(g, matchname1='Supply temp', matchname2='HVAC KN4', timerange=['02.01.2021  00:00','31.03.2021  23:00']):  #只考虑了两个变量的情况
     start_time_string = timerange[0]
-    start_time_neo4j_str = convert_to_desired_format(start_time_string, "%Y-%m-%dT%H:%M:%S")
+    start_time_neo4j_str = convert_to_desired_format(start_time_string,"%Y-%m-%dT%H:%M:%S")
     end_time_string = timerange[1]
-    end_time_neo4j_str = convert_to_desired_format(end_time_string, "%Y-%m-%dT%H:%M:%S")
+    end_time_neo4j_str = convert_to_desired_format(end_time_string,"%Y-%m-%dT%H:%M:%S")
     cypher_query = """
     MATCH (n:Subject {name: $matchname1})-[*]->(n2:Subject {name: $matchname2})
-    MATCH (n2)-[hasTimestamp]->(ts)
+    MATCH (n2)-[location]->(n3)
+    MATCH (n3)-[*]->(ts:TIMESTAMP)
     MATCH (ts)-[*]->(value:VALUE)
-    WHERE ts.timestamp >= $start_time AND ts.timestamp <= $end_time
-    RETURN AVG(value.name) AS averageValue
+    WHERE ts.name >= $start_time AND ts.name <= $end_time
+    RETURN ts.name AS Timestamp, value.name AS VALUE
     """
     match_result = g.run(cypher_query, matchname1=matchname1, matchname2=matchname2, start_time=start_time_neo4j_str, end_time=end_time_neo4j_str)
     result = pd.DataFrame([dict(record) for record in match_result])
-    return result
+    avg_value = result['VALUE'].astype(float).mean()
+    avg_value = round(avg_value, 2)
+    return avg_value
 
 def neo4j_databasesize_count(g):
     node_c = g.run("MATCH (n) RETURN count(n) AS nodeCount").single()["nodeCount"]
