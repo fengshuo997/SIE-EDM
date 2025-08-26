@@ -3,6 +3,8 @@ from nltk import tag
 import pandas as pd
 from .to_neo4j import *
 from .mysql_code import *
+import rdfizer
+import subprocess
 
 def query_experiment_duodatabase(neo4j_g, mysql_conn,data_sample, column_structure, ta, cta, mysql_engine_data, matchname1, matchname2, Timestamp, Timerange, experiment_result, n):
   db_generate_start = time.time()
@@ -90,12 +92,21 @@ def query_experiment_single_database(neo4j_g, data_sample, column_structure, ta,
   print('Response time: ', match_end - match_start)
   return experiment_result
 
-def query_experiment_sdfrdfizer(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysql_engine_data = [], mysql_database_name=None, ta=None, cta=None, column_structure=None, matchname=None, query_time=None, datasize=120000,sp=10):
-    return 
+def query_experiment_sdfrdfizer():
+  config_file = './example/rdfizer/example/config.ini'
+  result = subprocess.run(
+    ["python", "-m", "rdfizer", "-c", config_file],
+    capture_output=True, text=True 
+    )
+
+  print("STDOUT:", result.stdout)
+  print("STDERR:", result.stderr)
+  print("SDM-rdfizer")
+  return 
 
 
 
-def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysql_engine_data = [], mysql_database_name=None, ta=None, cta=None, column_structure=None, matchname=None, query_time=None, datasize=120000,sp=10):
+def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysql_engine_data = [], mysql_database_name=None, ta=None, cta=None, column_structure=None, matchname=None, query_time=None, datasize=120000,sp=1):
     datasize_sample = [int(datasize/sp * i) for i in range(sp+1)]
     print(datasize_sample)
 
@@ -139,11 +150,14 @@ def do_query_experiment(data=pd.DataFrame, neo4j_g=None, mysql_cursor=None, mysq
             continue
         data_sample = pd.concat([data.sample(n-1), tagetrow], ignore_index=True).dropna(axis=0, how='any')
 
-        # search by double databases
-        experiment_result = query_experiment_duodatabase(neo4j_g, mysql_conn,data_sample, column_structure, ta, cta, mysql_engine_data, matchname1, matchname2, Timestamp, Timerange, experiment_result, n)
+        #  experiment by double databases
+        # experiment_result = query_experiment_duodatabase(neo4j_g, mysql_conn,data_sample, column_structure, ta, cta, mysql_engine_data, matchname1, matchname2, Timestamp, Timerange, experiment_result, n)
 
-        #  seatch by single database
-        experiment_result = query_experiment_single_database(neo4j_g, data_sample, column_structure, ta, cta, matchname1, matchname2, Timestamp, Timerange, experiment_result, n)
+        #  experiment by single database
+        # experiment_result = query_experiment_single_database(neo4j_g, data_sample, column_structure, ta, cta, matchname1, matchname2, Timestamp, Timerange, experiment_result, n)
+
+        #  experiment by SDM-Rdfizer
+        experiment_result = query_experiment_sdfrdfizer()
 
 
     return experiment_result

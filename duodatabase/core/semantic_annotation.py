@@ -87,7 +87,7 @@ def semantic_annotation(config_path):
                                                     matchname=matchname_example,
                                                     query_time=query_time_example,
                                                     datasize=datasize_sample)
-            experiment_result.to_csv(experiment_result_path)
+            # experiment_result.to_csv(experiment_result_path)
 
             # queryname = ["Sensor"]  #set query value
             # kq = psm.generate_query(queryname,namespaces=namespaces) #generate query sentence

@@ -29,7 +29,7 @@ query_time_example = {'timestamp':'2021/2/2 16:00','range':['2021/2/2 9:00','202
 
 columns = ['DATE', 'TIMESTAMP', 'LOCATION', 'ENERGY_SOURCE', 'MEASURE', 'UNIT_OF_MEASURE', 'INTERVAL', 'VALUE']  # only temporary need to change!!!!
 example_column_structure = [['ENERGY_SOURCE', 'MEASURE', 'LOCATION'], ['INTERVAL', 'UNIT_OF_MEASURE', 'DATE', 'VALUE', 'TIMESTAMP']]  # only temporary need to change!!!!
-datasize_sample = 120000  # only temporary need to change!!!!
+datasize_sample = 1200  # only temporary need to change!!!!
 experiment_columns=['Database Generate time (methode_doubleDatabases) [s]',
                     'Database Generate time (methode_singleDatabase) [s]',
                     'Database size (methode_doubleDatabases) [KB]',
