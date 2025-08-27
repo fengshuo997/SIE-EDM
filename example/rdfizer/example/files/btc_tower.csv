@@ -1,0 +1,10 @@
+DATE,TIMESTAMP,LOCATION,ENERGY_SOURCE,MEASURE,UNIT_OF_MEASURE,INTERVAL,VALUE
+03.01.2021,12:00 03.01.2021,Tower BTC,electricity,offices 12th floor,kWh,H,0
+03.01.2021,13:00 03.01.2021,Tower BTC,electricity,restaurant 13th floor,kWh,H,1
+03.01.2021,13:00 03.01.2021,Tower BTC,electricity,offices 14th floor,kWh,H,1
+03.01.2021,13:00 03.01.2021,Tower BTC,electricity,billing meter total consumption,kWh,H,99
+03.01.2021,13:00 03.01.2021,Tower BTC,electricity,chiller IT rooms #1,kWh,H,0
+03.01.2021,15:00 03.01.2021,Tower BTC,electricity,chiller IT rooms #2,kWh,H,5
+03.01.2021,13:00 03.01.2021,Tower BTC,electricity,cooling offices,kWh,H,0
+03.01.2021,14:00 03.01.2021,Tower BTC,electricity,lighting -2nd floo,kWh,H,4
+11.02.2021,13:00 11.02.2021,Tower BTC,electricity,lighting -1st floor,kWh,H,8

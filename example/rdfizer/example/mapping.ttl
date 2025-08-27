@@ -12,20 +12,20 @@
   a rr:TriplesMap;
     
   rml:logicalSource [
-    rml:source "./example/rdfizer/example/files/sampleSource1.csv";
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "http://project-iasis.eu/BioType/{biotype}";
-    rr:class iasis:BioType
+    rr:template "http://project-iasis.eu/{ENERGY_SOURCE}";
+    rr:class iasis:ENERGY_SOURCE
   ]; 
   rr:predicateObjectMap [ 
-    rr:predicate iasis:isRelatedTo; 
+    rr:predicate iasis:has_measure; 
     rr:objectMap [
       rr:parentTriplesMap <TripleMap2>;
       rr:joinCondition [
-        rr:child "enst";
-        rr:parent "Transcript";
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
       ];
     ];
   ].
@@ -34,10 +34,142 @@
   a rr:TriplesMap;
     
   rml:logicalSource [
-    rml:source "./example/rdfizer/example/files/sampleSource2.csv";
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
-    rr:template "http://project-iasis.eu/Chromosome/{chr}";
-    rr:class iasis:chr
-  ]. 
+    rr:template "http://project-iasis.eu/{MEASURE}";
+    rr:class iasis:MEASURE
+  ];
+  rr:predicateObjectMap [ 
+    rr:predicate iasis:has_location; 
+    rr:objectMap [
+      rr:parentTriplesMap <TripleMap3>;
+      rr:joinCondition [
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
+      ];
+    ];
+  ].
+
+<TripleMap3>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://project-iasis.eu/{LOCATION}";
+    rr:class iasis:LOCATION
+  ];
+  rr:predicateObjectMap [ 
+    rr:predicate iasis:has_interval; 
+    rr:objectMap [
+      rr:parentTriplesMap <TripleMap4>;
+      rr:joinCondition [
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
+      ];
+    ];
+  ].
+
+<TripleMap4>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://project-iasis.eu/{INTERVAL}";
+    rr:class iasis:INTERVAL
+  ];
+  rr:predicateObjectMap [ 
+    rr:predicate iasis:has_unit; 
+    rr:objectMap [
+      rr:parentTriplesMap <TripleMap5>;
+      rr:joinCondition [
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
+      ];
+    ];
+  ].
+
+<TripleMap5>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://project-iasis.eu/{UNIT_OF_MEASURE}";
+    rr:class iasis:UNIT
+  ];
+  rr:predicateObjectMap [ 
+    rr:predicate iasis:has_date; 
+    rr:objectMap [
+      rr:parentTriplesMap <TripleMap6>;
+      rr:joinCondition [
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
+      ];
+    ];
+  ].
+
+<TripleMap6>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://project-iasis.eu/{DATE}";
+    rr:class iasis:DATE
+  ];
+  rr:predicateObjectMap [ 
+    rr:predicate iasis:has_value; 
+    rr:objectMap [
+      rr:parentTriplesMap <TripleMap7>;
+      rr:joinCondition [
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
+      ];
+    ];
+  ].
+
+<TripleMap7>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://project-iasis.eu/{VALUE}";
+    rr:class iasis:VALUE
+  ];
+  rr:predicateObjectMap [ 
+    rr:predicate iasis:has_timestamp; 
+    rr:objectMap [
+      rr:parentTriplesMap <TripleMap8>;
+      rr:joinCondition [
+        rr:child "TIMESTAMP";
+        rr:parent "TIMESTAMP";
+      ];
+    ];
+  ].
+
+<TripleMap8>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "./example/rdfizer/example/files/btc_tower.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "http://project-iasis.eu/{TIMESTAMP}";
+    rr:class iasis:TIMESTAMP
+  ].

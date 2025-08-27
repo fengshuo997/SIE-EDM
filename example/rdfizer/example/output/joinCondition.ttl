@@ -7,22 +7,99 @@
 @prefix iasis: <http://project-iasis.eu/vocab/> .
 @base <http://project-iasis.eu/> .
 
-<http://project-iasis.eu/BioType/processed_transcript> a iasis:BioType;
-		iasis:isRelatedTo <http://project-iasis.eu/Chromosome/chr1>.
+<http://project-iasis.eu/electricity> a iasis:ENERGY_SOURCE;
+		iasis:has_measure <http://project-iasis.eu/offices%2012th%20floor>.
 
-<http://project-iasis.eu/BioType/transcribed_unprocessed_pseudogene> a iasis:BioType;
-		iasis:isRelatedTo <http://project-iasis.eu/Chromosome/chr1>.
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/restaurant%2013th%20floor>.
 
-<http://project-iasis.eu/BioType/unprocessed_pseudogene> a iasis:BioType;
-		iasis:isRelatedTo <http://project-iasis.eu/Chromosome/chr1>.
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/offices%2014th%20floor>.
 
-<http://project-iasis.eu/BioType/miiiiiiRNA> a iasis:BioType;
-		iasis:isRelatedTo <http://project-iasis.eu/Chromosome/chr1>.
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/billing%20meter%20total%20consumption>.
 
-<http://project-iasis.eu/BioType/lincRNA> a iasis:BioType;
-		iasis:isRelatedTo <http://project-iasis.eu/Chromosome/chr1>.
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/chiller%20IT%20rooms%20%231>.
 
-<http://project-iasis.eu/BioType/miRNA> a iasis:BioType;
-		iasis:isRelatedTo <http://project-iasis.eu/Chromosome/chr1>.
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/chiller%20IT%20rooms%20%232>.
 
-<http://project-iasis.eu/Chromosome/chr1> a iasis:chr.
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/cooling%20offices>.
+
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/lighting%20-2nd%20floo>.
+
+<http://project-iasis.eu/electricity> iasis:has_measure <http://project-iasis.eu/lighting%20-1st%20floor>.
+
+<http://project-iasis.eu/offices%2012th%20floor> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/restaurant%2013th%20floor> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/offices%2014th%20floor> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/billing%20meter%20total%20consumption> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/chiller%20IT%20rooms%20%231> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/chiller%20IT%20rooms%20%232> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/cooling%20offices> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/lighting%20-2nd%20floo> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/lighting%20-1st%20floor> a iasis:MEASURE;
+		iasis:has_location <http://project-iasis.eu/Tower%20BTC>.
+
+<http://project-iasis.eu/Tower%20BTC> a iasis:LOCATION;
+		iasis:has_interval <http://project-iasis.eu/H>.
+
+<http://project-iasis.eu/H> a iasis:INTERVAL;
+		iasis:has_unit <http://project-iasis.eu/kWh>.
+
+<http://project-iasis.eu/kWh> a iasis:UNIT;
+		iasis:has_date <http://project-iasis.eu/03.01.2021>.
+
+<http://project-iasis.eu/kWh> iasis:has_date <http://project-iasis.eu/11.02.2021>.
+
+<http://project-iasis.eu/03.01.2021> a iasis:DATE;
+		iasis:has_value <http://project-iasis.eu/0>.
+
+<http://project-iasis.eu/03.01.2021> iasis:has_value <http://project-iasis.eu/1>.
+
+<http://project-iasis.eu/03.01.2021> iasis:has_value <http://project-iasis.eu/99>.
+
+<http://project-iasis.eu/03.01.2021> iasis:has_value <http://project-iasis.eu/5>.
+
+<http://project-iasis.eu/03.01.2021> iasis:has_value <http://project-iasis.eu/4>.
+
+<http://project-iasis.eu/11.02.2021> a iasis:DATE;
+		iasis:has_value <http://project-iasis.eu/8>.
+
+<http://project-iasis.eu/0> a iasis:VALUE;
+		iasis:has_timestamp <http://project-iasis.eu/12:00%2003.01.2021>.
+
+<http://project-iasis.eu/1> a iasis:VALUE;
+		iasis:has_timestamp <http://project-iasis.eu/13:00%2003.01.2021>.
+
+<http://project-iasis.eu/99> a iasis:VALUE;
+		iasis:has_timestamp <http://project-iasis.eu/13:00%2003.01.2021>.
+
+<http://project-iasis.eu/0> iasis:has_timestamp <http://project-iasis.eu/13:00%2003.01.2021>.
+
+<http://project-iasis.eu/5> a iasis:VALUE;
+		iasis:has_timestamp <http://project-iasis.eu/15:00%2003.01.2021>.
+
+<http://project-iasis.eu/4> a iasis:VALUE;
+		iasis:has_timestamp <http://project-iasis.eu/14:00%2003.01.2021>.
+
+<http://project-iasis.eu/8> a iasis:VALUE;
+		iasis:has_timestamp <http://project-iasis.eu/13:00%2011.02.2021>.
+
+<http://project-iasis.eu/12:00%2003.01.2021> a iasis:TIMESTAMP.
+<http://project-iasis.eu/13:00%2003.01.2021> a iasis:TIMESTAMP.
+<http://project-iasis.eu/15:00%2003.01.2021> a iasis:TIMESTAMP.
+<http://project-iasis.eu/14:00%2003.01.2021> a iasis:TIMESTAMP.
+<http://project-iasis.eu/13:00%2011.02.2021> a iasis:TIMESTAMP.
