@@ -113,7 +113,7 @@ def query_timeaverage(id, time_range, cursor):
 def count_database_size(conn, mysql_database_name):
     sql = """
         SELECT ROUND(
-            COALESCE(COALESCE(data_length,0), 0) / 1024
+            COALESCE(COALESCE(data_length + index_length,0), 0) / 1024
         , 1) AS size_kb
         FROM information_schema.tables
         WHERE table_schema = %s
