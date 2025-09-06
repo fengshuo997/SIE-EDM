@@ -1,5 +1,6 @@
-# Semi-automatic annotation framwork
-This project presents a semi-automatic annotation framework designed to enhance semantic interoperability within the energy domain by transforming structured data into RDF-based knowledge graphs. The proposed framework bridges raw structured data and semantic technologies by leveraging ontologies, semantic similarity calculations, and multi-database architecture (e.g., Neo4j, MySQL). It is particularly tailored to the energy domain, where data is largely structured and voluminous, unlike general domains dominated by unstructured text.
+# SEINE Framework
+This is official repo for "SEINE Framework: Semi-automatic sEmantic INteroperability Enhancement Framework " by anonymous organizations, anonymous departments, anonymous authors.
+This framework designed to enhance semantic interoperability within the energy domain by transforming structured data into RDF-based knowledge graphs. The proposed framework bridges raw structured data and semantic technologies by leveraging ontologies, semantic similarity calculations, and multi-database architecture (e.g., Neo4j, MySQL). It is particularly tailored to the energy domain, where data is largely structured and voluminous, unlike general domains dominated by unstructured text.
 
 ![Semi-Automatic Semantic Interoperability Enhancement Framework](./image/Semi-Automatic Semantic Interoperability Enhancement Framework.png)
 
@@ -61,7 +62,3 @@ python3 duodatabase/run_duodatabase.py
 Make sure all paths and configurations are properly set in `config_rdf.py` before running.
 
 ---
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
